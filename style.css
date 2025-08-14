@@ -8,10 +8,17 @@ body {
   gap: 20px;
 }
 
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
 ul,
 li {
   list-style-type: none;
 }
+
+/* Container 1 (header) */
 
 .links a {
   text-decoration: none;
@@ -40,6 +47,8 @@ li {
   padding-right: 30px;
 }
 
+/* Container 2 (infobox, twenty-one-pilots photo) */
+
 .container-2 {
   background-color: black;
   color: white;
@@ -52,7 +61,6 @@ li {
 .infobox {
   display: flex;
   flex-direction: column;
-  margin-top: -35px;
 }
 
 .listen-now-button {
@@ -66,6 +74,11 @@ li {
   font-weight: bold;
 }
 
+.listen-now-button:hover {
+  background-color: rgb(255, 28, 28);
+  transition: 0.2s;
+}
+
 .image-and-author {
   display: flex;
   flex-direction: column;
@@ -77,8 +90,70 @@ li {
   height: 300px;
 }
 
+/* Container 3 (blurryface era albums) */
+
 .container-3 {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
 }
+
+.all-albums {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.all-albums img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+}
+
+.album-container {
+  position: relative;
+  width: 152px;
+}
+
+.album-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.album-container:hover .overlay {
+  opacity: 1;
+}
+
+.all-albums p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Container 4 (quote/lyrics) */
 
 .container-4 {
 }
