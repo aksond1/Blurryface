@@ -155,10 +155,92 @@ li {
 
 /* Container 4 (quote/lyrics) */
 
-.container-4 {
+.lyric-quote-container {
+  margin: 0;
+  padding: 150px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.quote {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  margin: 20px;
+}
+
+.cite {
+  width: 700px;
+  text-align: end;
+  font-style: italic;
+}
+
+/* Container 5 (button to the lore) */
+
 .container-5 {
+  background-color: black;
+  color: white;
+  padding: 70px;
+  display: block;
+}
+
+.box {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 750px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.lore {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 10px;
+  width: 600px;
+  gap: 7px;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.infotext {
+  padding: 0;
+  margin: 0;
+}
+
+.lore-button {
+  margin: 0;
+  padding: 10px;
+  width: 100px;
+  height: 63px;
+  margin: 0;
+  font-weight: bold;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.lore-button:hover {
+  background-color: rgb(255, 28, 28);
+  transition: 0.2s;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
 }
 
 .footer {
@@ -166,5 +248,4 @@ li {
   color: white;
   padding: 5px;
   text-align: center;
-  margin-bottom: 20px;
 }
