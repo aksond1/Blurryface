@@ -20,42 +20,44 @@ li {
 
 /* Container 1 (header) */
 
-.links a {
-  text-decoration: none;
-  color: white;
-}
-
-.container-1 {
+.header {
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.header {
+.title {
   font-style: italic;
   margin: 0;
   padding-left: 30px;
 }
 
-.links {
+.links-header {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
   padding-right: 30px;
 }
 
+.links-header a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Container 2 (infobox, twenty-one-pilots photo) */
 
-.container-2 {
+.basic-info {
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 100px;
+  flex-wrap: wrap;
 }
 
 .infobox {
@@ -79,20 +81,20 @@ li {
   transition: 0.2s;
 }
 
-.image-and-author {
+.photobox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.top-photo {
+.photo {
   width: 480px;
   height: 300px;
 }
 
 /* Container 3 (blurryface era albums) */
 
-.container-3 {
+.albums {
   background-color: black;
   color: white;
   display: flex;
@@ -101,29 +103,37 @@ li {
   padding: 100px;
 }
 
-.all-albums {
+.albumsbox {
   width: 65%;
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
+  flex-wrap: wrap;
 }
 
-.all-albums img {
+.albumsbox img {
   display: block;
   width: 150px;
   height: 150px;
   border: 1px solid white;
 }
 
-.album-container {
-  position: relative;
-  width: 152px;
+.albumsbox p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .album-cover {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.album-container {
+  position: relative;
+  width: 152px;
 }
 
 .overlay {
@@ -144,13 +154,6 @@ li {
 
 .album-container:hover .overlay {
   opacity: 1;
-}
-
-.all-albums p {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
 }
 
 /* Container 4 (quote/lyrics) */
@@ -185,23 +188,24 @@ li {
 
 /* Container 5 (button to the lore) */
 
-.container-5 {
+.blurryface-lore {
   background-color: black;
   color: white;
   padding: 70px;
   display: block;
 }
 
-.box {
+.textbox {
   background-color: rgb(15, 15, 15);
   color: white;
   padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 750px;
+  max-width: 750px;
   margin: auto;
   font-size: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .lore {
@@ -211,11 +215,6 @@ li {
   padding: 10px;
   width: 600px;
   gap: 7px;
-}
-
-h4 {
-  padding: 0;
-  margin: 0;
 }
 
 .infotext {
@@ -236,11 +235,6 @@ h4 {
 .lore-button:hover {
   background-color: rgb(255, 28, 28);
   transition: 0.2s;
-}
-
-.box a {
-  text-decoration: none;
-  color: black;
 }
 
 .footer {
